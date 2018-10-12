@@ -22,7 +22,7 @@ public class UserTest extends JunitTest{
 	@Test
 	public void testGetUserInfo(){
 		String username = "mengdee";
-		// 第一次执行了方法体
+		// 查询所有用户信息
 		List<User> users = service.getUserInfo(username);
 		for (User user:users) {
 			log.info("user==============================={}",user);
